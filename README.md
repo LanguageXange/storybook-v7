@@ -1,23 +1,23 @@
-## Vite + React + TypeScript + TailwindCSS + Storybook 
+## Vite + React + TypeScript + TailwindCSS + Storybook
 
 `pnpm create vite .`
 `pnpm install`
 `pnpm run dev`
 
-
 ## Install TailwindCSS
+
 https://tailwindcss.com/docs/guides/vite
 
 `pnpm add -D tailwindcss postcss autoprefixer`
 `npx tailwindcss init -p`
 
-
 ## Set up Storybook
+
 `npx storybook@latest init`
 `pnpm run storybook`
 
-
 ## Storybook with TailwindCSS
+
 https://storybook.js.org/recipes/tailwindcss
 
 `npx storybook@latest add @storybook/addon-themes`
@@ -44,14 +44,12 @@ I added a `.dark` class
 
 ```
 
-
-
 ## Some Issues with render()
 
 ```
 // https://storybook.js.org/docs/api/csf
 
-// this doesn't work 
+// this doesn't work
 // export const WithProp: Story = {
 //   render: () => <MyTitle label="something" bg="purple" />,
 // };
@@ -60,6 +58,10 @@ I added a `.dark` class
 
 ### Solution -> change file from `ts` to `tsx` fixed it !
 
-
 ## Adding Docs
+
 ` tags:['autodocs'],`
+
+## Add Switch Stories with useArgs()
+
+@storybook/preview-api
